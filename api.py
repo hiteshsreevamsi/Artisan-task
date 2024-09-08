@@ -36,6 +36,7 @@ async def send_message(message: MessageCreate):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+
 @api_router.get("/messages/")
 async def get_messages(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     messages = get_messages_by_user(db, current_user.id)
