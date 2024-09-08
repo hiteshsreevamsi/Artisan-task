@@ -1,0 +1,11 @@
+fastapi~=0.114.0
+uvicorn
+sqlalchemy~=2.0.34
+openai~=0.28.0
+databases
+passlib~=1.7.4
+python-jose
+bcrypt
+pydantic-settings
+pydantic~=2.9.0
+httpx~=0.27.2
